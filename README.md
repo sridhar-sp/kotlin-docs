@@ -9,6 +9,7 @@
     * Kotlin supports property delegation on both primitive and user defined types
     * Using `by` keyword we can delegate the access of getter/setter to other classes
     * Syntax is `val/var <property name>: <Type> by <expression>`
+        * Ex `val someValue: <Type> by delegate`
         * Where `someValue` is our regular const value which will read its value from `delegate`
         * Where `delegate`is class implementing either `kotlin.reflect.KProperty.ReadOnlyProperty` or
           `kotlin.reflect.KProperty.ReadWriteProperty`
